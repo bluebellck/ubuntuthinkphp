@@ -14,6 +14,18 @@
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
+//配置格式
+//define('CONF_EXT','.ini');
+//define('CONF_EXT','.xml');
+//define('CONF_EXT','.yaml');
+define('CONF_EXT','.json');
+
+
+//应用场景
+define('APP_STATUS','office');
+//扩展配置
+
+
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
